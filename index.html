@@ -256,14 +256,14 @@
   <!-- Carousel Script -->
   <script>
     const images = [
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\1.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\2.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\3.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\4.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\5.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\6.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\7.jpg",
-      "C:\\Users\\kiefe\\Downloads\\WEB\\ABOUTME PICS\\8.jpg"
+      "A (1)jpg",
+      "A (2).jpg",
+      "A (3).jpg",
+      "A (4).jpg",
+      "A (5).jpg",
+      "A (6).jpg",
+      "A (7).jpg",
+      "A (8).jpg"
 
 
 
@@ -347,7 +347,7 @@
     ">
 
       <!-- PROJECT 1 BUTTON -->
-      <a href="C:\Users\kiefe\Downloads\WEB\RESUME.html" style="text-decoration:none;color:white;text-align:center;">
+      <a href="RESUME.html" style="text-decoration:none;color:white;text-align:center;">
         <div style="
           width:200px;
           height:200px;
@@ -367,7 +367,7 @@
       </a>
 
       <!-- PROJECT 2 BUTTON -->
-      <a href="C:\Users\kiefe\Downloads\WEB\canvas(minions).html" style="text-decoration:none;color:white;text-align:center;">
+      <a href="canvas(minions).html" style="text-decoration:none;color:white;text-align:center;">
         <div style="
           width:200px;
           height:200px;
@@ -398,7 +398,7 @@
 
     <div style="position:relative; margin-bottom:50px;">
       <div id="cert-carousel" style="overflow:hidden; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.2); width:500px; height:350px; margin:0 auto; background:white;">
-        <img id="cert-img" src="C:\\Users\\kiefe\\Downloads\\WEB\\CERTIFICATES\\1.png" style="width:500px; height:350px; object-fit:contain; cursor:pointer;">
+        <img id="cert-img" src="CERT (1).png" style="width:500px; height:350px; object-fit:contain; cursor:pointer;">
       </div>
 
       <button id="cert-prev" style="position:absolute; top:50%; left:250px; transform:translateY(-50%); background:#3768f0; color:white; border:none; padding:10px 14px; border-radius:8px; cursor:pointer;">Prev</button>
@@ -435,21 +435,21 @@
 <script>
   /* Load all certificates automatically */
   const certImages = [];
-  for(let i = 1; i <= 36; i++){
-    certImages.push(`C:\\Users\\kiefe\\Downloads\\WEB\\CERTIFICATES\\${i}.png`);
+  for (let i = 1; i <= 36; i++) {
+    certImages.push(`cert (${i}).png`);
   }
 
   let certIndex = 0;
   const certImg = document.getElementById("cert-img");
 
   /* Prev Button */
-  document.getElementById("cert-prev").addEventListener("click", ()=>{
+  document.getElementById("cert-prev").addEventListener("click", () => {
     certIndex = (certIndex - 1 + certImages.length) % certImages.length;
     certImg.src = certImages[certIndex];
   });
 
   /* Next Button */
-  document.getElementById("cert-next").addEventListener("click", ()=>{
+  document.getElementById("cert-next").addEventListener("click", () => {
     certIndex = (certIndex + 1) % certImages.length;
     certImg.src = certImages[certIndex];
   });
@@ -459,16 +459,17 @@
   const certViewerImg = document.getElementById("cert-viewer-img");
 
   // Open fullscreen when certificate is clicked
-  certImg.addEventListener("click", ()=>{
+  certImg.addEventListener("click", () => {
     certViewerImg.src = certImages[certIndex];
     certViewer.style.display = "flex";
   });
 
   // Close fullscreen when viewer is clicked
-  certViewer.addEventListener("click", ()=>{
+  certViewer.addEventListener("click", () => {
     certViewer.style.display = "none";
   });
 </script>
+
 
 <!-- CONTACT -->
 <section id="contact" style="width:100%;max-width:var(--max-width);padding:80px var(--gutter);color:white;text-align:center;">
@@ -479,18 +480,19 @@
 
   <div style="display:flex; justify-content:center; gap:40px;">
     <a href="https://www.facebook.com/SNKFR0711/" target="_blank">
-      <img src="C:\\Users\\kiefe\\Downloads\\WEB\\contacts\\1.png" style="width:60px; height:60px;">
+      <img src="C1.png" style="width:60px; height:60px;">
     </a>
     <a href="https://www.instagram.com/ssnnkkffrr" target="_blank">
-      <img src="C:\\Users\\kiefe\\Downloads\\WEB\\contacts\\2.png" style="width:60px; height:60px;">
+      <img src="C2.png" style="width:60px; height:60px;">
     </a>
     <a href="mailto:kieferbenitez@gmail.com">
-      <img src="C:\\Users\\kiefe\\Downloads\\WEB\\contacts\\3.png" style="width:60px; height:60px;">
+      <img src="C3.png" style="width:60px; height:60px;">
     </a>
   </div>
 </section>
 
 </body>
 </html>
+
 
 
